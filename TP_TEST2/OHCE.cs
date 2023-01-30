@@ -9,32 +9,32 @@ namespace OHCE
     public class ohce
     {
 
-        public string revstring(string input)
+        public static string revstring(string input)
         {
             char[] inputArray = input.ToCharArray();
 
-            Console.WriteLine("Bonjour");
+
             Array.Reverse(inputArray);
             string reversedString = new string(inputArray);
 
-            Console.WriteLine(reversedString);
             Console.WriteLine("Au revoir");
             return reversedString;
         }
 
-        public string Palindrome(string input)
+        public static string Palindrome(string input)
         {
             char[] inputArray = input.ToCharArray();
 
             Array.Reverse(inputArray);
             string reversedString = new string(inputArray);
 
+            Console.WriteLine("Au revoir");
             if (input == reversedString)
             {
-                Console.WriteLine("bien dit");
+                return "bien dit";
+            } else {
+                return "Mal dit";
             }
-
-            return reversedString;
         }
 
 
