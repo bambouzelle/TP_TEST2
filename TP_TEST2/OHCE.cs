@@ -12,7 +12,7 @@ namespace OHCE
         public static string revstring(string input)
         {
             char[] inputArray = input.ToCharArray();
-
+            Console.WriteLine("Bonjour");
 
             Array.Reverse(inputArray);
             string reversedString = new string(inputArray);
@@ -24,6 +24,7 @@ namespace OHCE
         public static string Palindrome(string input)
         {
             char[] inputArray = input.ToCharArray();
+            Console.WriteLine("Bonjour");
 
             Array.Reverse(inputArray);
             string reversedString = new string(inputArray);
