@@ -65,7 +65,35 @@ namespace TEST_OHCE
             Assert.Equal(expected, result);
         }
 
+        [Fact]
+        public void TestEstunPalindrome()
+        {
+            string input = "kayak";
 
+            string result = ohce.Palindrome(input);
+
+            Assert.Equal("Bien Dit", result);
+        }
+
+        [Fact]
+        public void TestNestpasunPalindrome()
+        {
+            string input = "oui";
+
+            string result = ohce.Palindrome(input);
+
+            Assert.Equal("Mal dit", result);
+        }
+
+        [Fact]
+        public void revstr()
+        {
+            string input = "oui";
+
+            string result =  ohce.revstring(input);
+
+            Assert.Equal("iuo", result);
+        }
 
     }
 }
