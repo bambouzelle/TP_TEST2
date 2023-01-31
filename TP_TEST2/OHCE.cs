@@ -168,7 +168,7 @@ namespace OHCE
             switch (CultureInfo.InstalledUICulture.TwoLetterISOLanguageName)
             {
                 case "fr":
-                    return "bien dit";
+                    return "Mal dit";
                 // case "it": ...
                 default:
                     return "poorly said";
